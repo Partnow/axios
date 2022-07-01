@@ -1,14 +1,10 @@
 {
   "name": "axios",
   "version": "1.0.0",
-  "description": "- 创建实例",
+  "description": "",
   "main": "axios.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitee.com/YangSH98/axios.git"
   },
   "author": "",
   "license": "ISC",
