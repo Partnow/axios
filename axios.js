@@ -1,10 +1,11 @@
 import axios from "axios";
-
+//创建实例
 const instance = axios.create({
     baseURL: "http://127.0.0.1",
     timeout: 6000
 })
 
+//拦截器
 instance.interceptors.request.use((config) => {
     return config
 }, (error) => {
@@ -17,7 +18,8 @@ instance.interceptors.response.use((response) => {
     return Promise.reject(error)
 })
 
-
+//
+// 操作实例
 export async function doPost(url, data, config) {
     try {
         return await instance.post(url, data, config)
